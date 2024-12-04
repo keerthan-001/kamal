@@ -1,30 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Metadata and configuration of the webpage -->
-    
-    <!-- Title of the web page (displayed in browser tab) -->
-    <title>My Awesome Webpage</title>
-    
-    <!-- Meta Tags for defining character set and page description -->
-    <meta charset="UTF-8">  <!-- Character encoding for the page -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Responsive design -->
-    <meta name="description" content="This is a simple example of a webpage with title, meta, and link tags.">  <!-- Page description for search engines -->
-    <meta name="keywords" content="HTML, webpage, title, meta, link, example">  <!-- Keywords for SEO -->
-    <meta name="author" content="Your Name">  <!-- Author of the page -->
-    
-    <!-- Link Tag for adding external stylesheets -->
-    <link rel="stylesheet" href="styles.css">  <!-- External stylesheet (link to CSS file) -->
-    
-    <!-- Link Tag for defining favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon for the browser tab -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f1f1f1;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Online Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#electronics">Electronics</a></li>
+                <li><a href="#furniture">Furniture</a></li>
+                <li><a href="#clothing">Clothing</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Content of the webpage -->
-    <h1>Welcome to My Awesome Webpage!</h1>
-    <p>This is a simple example page.</p>
+    <main>
+        <section id="electronics">
+            <h2>Electronics</h2>
+            <div class="product">
+                <h3>Smartphone XYZ</h3>
+                <p>Price: $699</p>
+                <p>Description: A high-end smartphone with a stunning display.</p>
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>6.5-inch display</li>
+                    <li>128GB storage</li>
+                    <li>12MP camera</li>
+                </ul>
+            </div>
+            <div class="product">
+                <h3>Laptop ABC</h3>
+                <p>Price: $999</p>
+                <p>Description: A powerful laptop for gaming and productivity.</p>
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>16GB RAM</li>
+                    <li>512GB SSD</li>
+                    <li>NVIDIA GTX 1650</li>
+                </ul>
+            </div>
+        </section>
 
+        <section id="furniture">
+            <h2>Furniture</h2>
+            <div class="product">
+                <h3>Office Chair</h3>
+                <p>Price: $199</p>
+                <p>Description: Ergonomic office chair for maximum comfort.</p>
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Adjustable height</li>
+                    <li>360-degree swivel</li>
+                    <li>Mesh back for breathability</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="clothing">
+            <h2>Clothing</h2>
+            <div class="product">
+                <h3>Men's Jacket</h3>
+                <p>Price: $89</p>
+                <p>Description: Stylish and warm jacket for winter.</p>
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Water-resistant material</li>
+                    <li>Available in multiple sizes</li>
+                    <li>Two front pockets</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Store. All rights reserved.</p>
+    </footer>
 </body>
 </html>

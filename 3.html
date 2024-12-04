@@ -3,86 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Department of Engineering</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to external CSS file -->
+    <title>Matrimony Registration Form</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #007BFF;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        section {
             padding: 20px;
-            margin: 20px;
-            background: #fff;
-            border-radius: 5px;
+            background-color: #4bb9f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 900px;
+            margin: auto;
+            padding: 50px;
+            background-color: rgba(231, 50, 50, 0.687);
+            border-radius: 50px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h2 {
-            color: #007BFF;
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
         }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #007BFF;
-            color: #fff;
-            position: relative;
-            bottom: 0;
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select {
             width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: rgb(42, 116, 15);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+
+        input[type="submit"]:hover {
+            background-color: #28e031;
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
+    <h1>Matrimony Registration Form</h1>
+    <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
 
-<header>
-    <h1>Department of Engineering</h1>
-</header>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            
+        </select>
 
-<section>
-    <h2>Welcome to the Department of Engineering</h2>
-    <p>The Department of Engineering is dedicated to providing high-quality education and training in various engineering disciplines. Our mission is to foster innovation, creativity, and excellence in engineering education.</p>
-</section>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
 
-<section>
-    <h2>Programs Offered</h2>
-    <ul>
-        <li>Bachelor of Science in Mechanical Engineering</li>
-        <li>Bachelor of Science in Electrical Engineering</li>
-        <li>Bachelor of Science in Civil Engineering</li>
-        <li>Bachelor of Science in Computer Engineering</li>
-        <li>Master of Science in Engineering Management</li>
-    </ul>
-</section>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-<section>
-    <h2>Our Faculty</h2>
-    <p>Our faculty members are experienced professionals and researchers dedicated to student success. They bring a wealth of knowledge from both academia and industry.</p>
-    <ul>
-        <li>Dr. John Smith - Professor of Mechanical Engineering</li>
-        <li>Dr. Jane Doe - Associate Professor of Electrical Engineering</li>
-        <li>Dr. Emily Johnson - Assistant Professor of Civil Engineering</li>
-        <li>Dr. Michael Brown - Professor of Computer Engineering</li>
-    </ul>
-</section>
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
 
-<section>
-    <h2>Contact Us</h2>
-    <p>If you have any questions or need further information, please feel free to reach out to us:</p>
-    <p>Email: <a href="mailto:engineering@college.edu">engineering@college.edu</a></p>
-    <p>Phone: (123) 456-7890</p>
-    <p>Address: 123 Engineering Lane, College Town, ST 12345</p>
-</section>
+        <label for="height">Height:</label>
+        <input type="text" id="height" name="height" placeholder="e.g., 5'6\" or 168 cm" required>
 
-<footer>
-    <p>&copy; 2023 Department of Engineering, College Name</p>
-</footer>
 
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="education">Education:</label>
+        <input type="text" id="education" name="education" required>
+
+        <label for="occupation">Occupation:</label>
+        <input type="text" id="occupation" name="occupation" required>
+
+        <label for="preferences">Partner Preferences:</label>
+        <textarea id="preferences" name="preferences" rows="4" placeholder="Describe your partner preferences..." required></textarea>
+
+        <input type="submit" value="Register">
+    </form>
 </body>
 </html>
