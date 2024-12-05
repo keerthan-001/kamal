@@ -1,82 +1,43 @@
-<!DOCTYPE html>
+z<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Menu</title>
+    <title>3x3 Image Grid</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f9f9f9;
+            margin: 20px;
+            background-color: #f4f4f4;
         }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+            gap: 5px; /* Spacing between grid items */
+            justify-items: center; /* Center images horizontally */
+            align-items: center; /* Center images vertically */
         }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        img {
-            width: 100px; /* Set a fixed width for images */
-            height: auto; /* Maintain aspect ratio */
-        }
-
-        h1 {
-            text-align: center;
-            color: #333;
+        .grid-container img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover; /* Ensure images fit the box proportionally */
+            border: 2px solid #ccc;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>Hotel Menu</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Image</th>
-                <th>Dish Name</th>
-                <th>Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="https://www.marthastewart.com/thmb/IeSLGyad0PyGeVHSdwBJqaFDeQ8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/MSL-338686-spaghetti-carbonara-hero-3x2-69999-560b45d1dd9f4741b717176eff024839.jpeg"alt="Dish 1"></td>
-                <td>Spaghetti Carbonara</td>
-                <td>$15.00</td>
-            </tr>
-            <tr>
-                <td><img src="https://www.inspiredtaste.net/wp-content/uploads/2023/09/Margherita-Pizza-5-1200.jpg" alt="Dish 2"></td>
-                <td>Margherita Pizza</td>
-                <td>$12.00</td>
-            </tr>
-            <tr>
-                <td><img src="https://www.dinneratthezoo.com/wp-content/uploads/2019/05/grilled-salmon-final-2.jpg" alt="Dish 3"></td>
-                <td>Grilled Salmon</td>
-                <td>$20.00</td>
-            </tr>
-            <tr>
-                <td><img src="https://www.onceuponachef.com/images/2010/08/Homemade-Caesar-Salad-Dressing-760x887.jpg"alt="Dish 4"></td>
-                <td>Caesar Salad</td>
-                <td>$10.00</td>
-            </tr>
-            <tr>
-                <td><img src="https://sallysbakingaddiction.com/wp-content/uploads/2013/04/triple-chocolate-cake-4.jpg"></td>
-                <td>Chocolate Cake</td>
-                <td>$8.00</td>
-            </tr>
-        </tbody>
-    </table>
+    <h1>3x3 Image Grid using CSS Grid</h1>
+    <div class="grid-container">
+        <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg" alt="Image 1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRejvqw2mv5faxPv4cFN63ej5rkenrSJZFQcA_5a_8rTzORckHpgWSt4kN_iME0j7TsfLA&usqp=CAU" alt="Image 2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_DUDyqZ-M3gLokWJK4k9OAV7tLdCLkC940QSZn_ZuObcceZOpToAiyrp_FlHmC4zTy8Q&usqp=CAU" alt="Image 3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOqWv7qiaouKHyORlyLL_pnxFjeJ38iuHUJohMYeAl6Vd9qmjedzuLVgdg3s3usqa-HLc&usqp=CAU" alt="Image 4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjh7vD-MGdt8p5ePKmqkMh6Xhiq8DiGOZiq2vblFDzBOZ8DnU4tbBQ_CXi9B9QE6PRP2I&usqp=CAU" alt="Image 5">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZ5MKrze7h4Ere896oLXACK_TT3xXBR21Grw10-RER4iRx2yIYswranUFA8jZyaY1GSo&usqp=CAU" alt="Image 6">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS93ninT4YOJq7Q-mEX5vUscnfPx3pynwF2m0Egh-j--UBdB68TUMb02gWCECXhouil3jI&usqp=CAU" alt="Image 7">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqzudgkk_v3LxXXkOsUcvJxiHR9gzBjQl3-26VN9p_CHOUBYIjjMikBAR1ZvDfQj9RBLU&usqp=CAU" alt="Image 8">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZUB32n0RfK3811tAUYB9bIPBK-lWX5uN7TzIHRXMe5c0tyQ1RHcZpE05c2TGqoCVpPrU&usqp=CAU" alt="Image 9">
+    </div>
 </body>
 </html>
